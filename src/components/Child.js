@@ -2,12 +2,12 @@ import React from "react";
 
 function Child({ showModal, setShowModal }) {
   return (
-    <div style={{ backgroundColor: "red" }}>
-      <h3>Child Componeny</h3>
+    <div className="child" style={{ backgroundColor: "red" }}>
+      <h2>Child Component</h2>
       <button onClick={()=>setShowModal(!showModal)}>Show Modal</button>
       {showModal && (
         <div>
-          <h5>Modal Component</h5>
+          <h3>Modal Component</h3>
           <p>This is the modal content.</p>
         </div>
       )}
